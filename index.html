@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		@keyframes animation1 {
+		from {
+			transform: translateY(-70px);
+		}
+		to {
+			transform: translateY(0px);
+		}
+		}
+		.maincontent {
+			display: flex;
+			flex-direction: column;
+		}
+		.header {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			background: #FF5757;
+		}
+		.logo {
+			width: 200px;
+			height: 100px;
+			margin-left: 55px;
+			background-image: url("LIGHT.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+		}
+		.nav {
+			display: flex;
+			margin-left: 570px;
+		}
+		.nav1 {
+			font-size: 15px;
+			font-family: "Century Gothic";
+			color: white;
+			text-decoration: none;
+			margin-right: 35px;
+			padding: 10px 15px 10px 15px;
+			border-bottom: 3px solid #8F0000;
+		}
+		.nav1:hover {
+			border-bottom: 3px solid #FF8383;
+		}
+		.nav1:active {
+			color: ;
+			border-bottom: 3px solid white;
+		}
+		.pg1 {
+			display: flex;
+			width: 100%;
+			font-family: "Century Gothic";
+		}
+		.pg1img {
+			width: 700px;
+			height: 700px;
+			background-image: url("genimg.webp");
+			background-repeat: no-repeat;
+			background-size: 100%;
+
+		}
+		.text1 {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			margin-top: 57px;
+			margin-left: 55px;
+			margin-bottom: 110px;
+		}
+		.h1_1 {
+			margin-bottom: 100px;
+			font-size: 40px;
+			animation-name: animation1;
+			animation-duration: 3s;
+		}
+		.p1 {
+			font-size: 27px;
+		}
+		.btn1 {
+			margin-top: 25px;
+		}
+		.pg2 {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			font-family: "Century Gothic";
+			background-color: #FF5757;
+		}
+		.blocks {
+			text-align: center;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+			font-family: "Century Gothic";
+			background-color: #FF5757;
+			margin-bottom: 200px;
+		}
+		.h1_2 {
+			font-size: 57px;
+			color: white;
+			font-family: "Century Gothic";
+			margin-top: 70px;
+		}
+		.b1 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("gendiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b1:hover {
+			background-image: url("gendivhover.png");
+		}
+		.b2 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("powerdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b2:hover {
+			background-image: url("powerdivhover.png");
+		}
+		.b3 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("lightdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b3:hover {
+			background-image: url("lightdivhover.png");
+		}
+		.b4 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("zapdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b4:hover {
+			background-image: url("zapdivhover.png");
+		}
+		.ap {
+			margin-top: 230px;
+		}
+		.a1 {
+			font-family: "Century Gothic";
+			text-decoration: none;
+			color: black;
+			font-size: 25px;
+		}
+		.a1:hover {
+			color: grey;
+		}
+		.a1:active {
+			color: grey;
+			text-decoration: underline;
+		}
+		.footer {
+			text-align: center;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			background: black;
+			position: relative;
+		}
+		.foot2 {
+			width: 300px;
+			height: 200px;
+			font-family: "Century Gothic";
+			font-size: 20px;
+			color: white;
+		}
+
+
+		/* Portrait tablets and medium desktops */
+@media (min-width: 991px) and (max-width: 1199px) {
+	* {
+			margin: 0;
+			padding: 0;
+		}
+		@keyframes animation1 {
+		from {
+			transform: translateY(-70px);
+		}
+		to {
+			transform: translateY(0px);
+		}
+		}
+		.maincontent {
+			display: flex;
+			flex-direction: column;
+		}
+		.header {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			background: #FF5757;
+		}
+		.logo {
+			width: 200px;
+			height: 100px;
+			margin-left: 55px;
+			background-image: url("LIGHT.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+		}
+		.nav {
+			display: flex;
+			margin-left: 300px;
+		}
+		.nav1 {
+			font-size: 15px;
+			font-family: "Century Gothic";
+			color: white;
+			text-decoration: none;
+			margin-right: 35px;
+			padding: 10px 15px 10px 15px;
+			border-bottom: 3px solid #8F0000;
+		}
+		.nav1:hover {
+			border-bottom: 3px solid #FF8383;
+		}
+		.nav1:active {
+			color: ;
+			border-bottom: 3px solid white;
+		}
+		.pg1 {
+			display: flex;
+			width: 100%;
+			font-family: "Century Gothic";
+		}
+		.pg1img {
+			width: 700px;
+			height: 700px;
+			background-image: url("genimg.webp");
+			background-repeat: no-repeat;
+			background-size: 100%;
+
+		}
+		.text1 {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			margin-top: 57px;
+			margin-left: 55px;
+			margin-bottom: 110px;
+		}
+		.h1_1 {
+			margin-bottom: 100px;
+			font-size: 40px;
+			animation-name: animation1;
+			animation-duration: 3s;
+		}
+		.p1 {
+			font-size: 27px;
+		}
+		.btn1 {
+			margin-top: 25px;
+		}
+		.pg2 {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			font-family: "Century Gothic";
+			background-color: #FF5757;
+		}
+		.blocks {
+			text-align: center;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+			font-family: "Century Gothic";
+			background-color: #FF5757;
+			margin-bottom: 200px;
+		}
+		.h1_2 {
+			font-size: 57px;
+			color: white;
+			font-family: "Century Gothic";
+			margin-top: 70px;
+		}
+		.b1 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("gendiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b1:hover {
+			background-image: url("gendivhover.png");
+		}
+		.b2 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("powerdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b2:hover {
+			background-image: url("powerdivhover.png");
+		}
+		.b3 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("lightdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b3:hover {
+			background-image: url("lightdivhover.png");
+		}
+		.b4 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("zapdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b4:hover {
+			background-image: url("zapdivhover.png");
+		}
+		.ap {
+			margin-top: 230px;
+		}
+		.a1 {
+			font-family: "Century Gothic";
+			text-decoration: none;
+			color: black;
+			font-size: 25px;
+		}
+		.a1:hover {
+			color: grey;
+		}
+		.a1:active {
+			color: grey;
+			text-decoration: underline;
+		}
+		.footer {
+			text-align: center;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			background: black;
+			position: relative;
+		}
+		.foot2 {
+			width: 300px;
+			height: 200px;
+			font-family: "Century Gothic";
+			font-size: 20px;
+			color: white;
+		}
+
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	* {
+			margin: 0;
+			padding: 0;
+		}
+		@keyframes animation1 {
+		from {
+			transform: translateY(-70px);
+		}
+		to {
+			transform: translateY(0px);
+		}
+		}
+		.maincontent {
+			display: flex;
+			flex-direction: column;
+		}
+		.header {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background: #FF5757;
+		}
+		.logo {
+			width: 200px;
+			height: 100px;
+			margin-left: 55px;
+			background-image: url("LIGHT.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+		}
+		.nav {
+			display: flex;
+			margin-left: 100px;
+			margin-bottom: 50px;
+		}
+		.nav1 {
+			font-size: 15px;
+			font-family: "Century Gothic";
+			color: white;
+			text-decoration: none;
+			margin-right: 35px;
+			padding: 10px 15px 10px 15px;
+			border-bottom: 3px solid #8F0000;
+		}
+		.nav1:hover {
+			border-bottom: 3px solid #FF8383;
+		}
+		.nav1:active {
+			color: ;
+			border-bottom: 3px solid white;
+		}
+		.pg1 {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			font-family: "Century Gothic";
+		}
+		.pg1img {
+			width: 700px;
+			height: 700px;
+			background-image: url("genimg.webp");
+			background-repeat: no-repeat;
+			background-size: 100%;
+
+		}
+		.text1 {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			margin-top: 57px;
+			margin-left: 55px;
+			margin-bottom: 110px;
+		}
+		.h1_1 {
+			margin-bottom: 100px;
+			font-size: 40px;
+			animation-name: animation1;
+			animation-duration: 3s;
+		}
+		.p1 {
+			font-size: 27px;
+		}
+		.btn1 {
+			margin-top: 25px;
+		}
+		.pg2 {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			font-family: "Century Gothic";
+			background-color: #FF5757;
+		}
+		.blocks {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+			font-family: "Century Gothic";
+			background-color: #FF5757;
+			margin-bottom: 200px;
+		}
+		.h1_2 {
+			font-size: 57px;
+			color: white;
+			font-family: "Century Gothic";
+			margin-top: 70px;
+		}
+		.b1 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("gendiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b1:hover {
+			background-image: url("gendivhover.png");
+		}
+		.b2 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("powerdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b2:hover {
+			background-image: url("powerdivhover.png");
+		}
+		.b3 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("lightdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b3:hover {
+			background-image: url("lightdivhover.png");
+		}
+		.b4 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("zapdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b4:hover {
+			background-image: url("zapdivhover.png");
+		}
+		.ap {
+			margin-top: 230px;
+		}
+		.a1 {
+			font-family: "Century Gothic";
+			text-decoration: none;
+			color: black;
+			font-size: 25px;
+		}
+		.a1:hover {
+			color: grey;
+		}
+		.a1:active {
+			color: grey;
+			text-decoration: underline;
+		}
+		.footer {
+			text-align: center;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			background: black;
+			position: relative;
+		}
+		.foot2 {
+			width: 300px;
+			height: 200px;
+			font-family: "Century Gothic";
+			font-size: 20px;
+			color: white;
+		}
+
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	* {
+			margin: 0;
+			padding: 0;
+		}
+		@keyframes animation1 {
+		from {
+			transform: translateY(-70px);
+		}
+		to {
+			transform: translateY(0px);
+		}
+		}
+		.maincontent {
+			display: flex;
+			flex-direction: column;
+		}
+		.header {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background: #FF5757;
+		}
+		.logo {
+			width: 200px;
+			height: 100px;
+			margin-left: 0px;
+			background-image: url("LIGHT.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+		}
+		.nav {
+			display: flex;
+			margin-left: 0px;
+			margin-bottom: 35px;
+		}
+		.nav1 {
+			font-size: 15px;
+			font-family: "Century Gothic";
+			color: white;
+			text-decoration: none;
+			margin-right: 35px;
+			padding: 10px 15px 10px 15px;
+			border-bottom: 3px solid #8F0000;
+		}
+		.nav1:hover {
+			border-bottom: 3px solid #FF8383;
+		}
+		.nav1:active {
+			color: ;
+			border-bottom: 3px solid white;
+		}
+		.pg1 {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			font-family: "Century Gothic";
+		}
+		.pg1img {
+			width: 700px;
+			height: 700px;
+			background-image: url("genimg.webp");
+			background-repeat: no-repeat;
+			background-size: 100%;
+
+		}
+		.text1 {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			margin-top: 57px;
+			margin-left: 55px;
+			margin-bottom: 15px;
+		}
+		.h1_1 {
+			margin-bottom: 100px;
+			font-size: 40px;
+			animation-name: animation1;
+			animation-duration: 3s;
+		}
+		.p1 {
+			font-size: 27px;
+		}
+		.btn1 {
+			margin-top: 25px;
+		}
+		.pg2 {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			font-family: "Century Gothic";
+			background-color: #FF5757;
+		}
+		.blocks {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+			font-family: "Century Gothic";
+			background-color: #FF5757;
+			margin-bottom: 150px;
+		}
+		.h1_2 {
+			font-size: 57px;
+			color: white;
+			font-family: "Century Gothic";
+			margin-top: 70px;
+		}
+		.b1 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("gendiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b1:hover {
+			background-image: url("gendivhover.png");
+		}
+		.b2 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("powerdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b2:hover {
+			background-image: url("powerdivhover.png");
+		}
+		.b3 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("lightdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b3:hover {
+			background-image: url("lightdivhover.png");
+		}
+		.b4 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("zapdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b4:hover {
+			background-image: url("zapdivhover.png");
+		}
+		.ap {
+			margin-top: 230px;
+		}
+		.a1 {
+			font-family: "Century Gothic";
+			text-decoration: none;
+			color: black;
+			font-size: 25px;
+		}
+		.a1:hover {
+			color: grey;
+		}
+		.a1:active {
+			color: grey;
+			text-decoration: underline;
+		}
+		.footer {
+			text-align: center;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			background: black;
+			position: relative;
+		}
+		.foot2 {
+			width: 300px;
+			height: 200px;
+			font-family: "Century Gothic";
+			font-size: 20px;
+			color: white;
+		}
+
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+	.header {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background: #FF5757;
+		}
+		.logo {
+			width: 200px;
+			height: 100px;
+			margin-left: 20px;
+			background-image: url("LIGHT.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+		}
+		.nav {
+			display: flex;
+			margin-left: 20px;
+			margin-bottom: 20px;
+		}
+		.nav1 {
+			font-size: 10px;
+			font-family: "Century Gothic";
+			color: white;
+			text-decoration: none;
+			margin-right: 35px;
+			padding: 5px 10px 5px 10px;
+			border-bottom: 3px solid #8F0000;
+		}
+		.nav1:hover {
+			border-bottom: 3px solid #FF8383;
+		}
+		.nav1:active {
+			color: ;
+			border-bottom: 3px solid white;
+		}
+	.pg1 {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			font-family: "Century Gothic";
+		}
+		.pg1img {
+			width: 400px;
+			height: 400px;
+			background-image: url("genimg.webp");
+			background-repeat: no-repeat;
+			background-size: 100%;
+
+		}
+		.text1 {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			margin-top: 57px;
+			margin-left: 0px;
+			margin-bottom: 30px;
+		}
+		.h1_1 {
+			margin-bottom: 50px;
+			font-size: 33px;
+			animation-name: animation1;
+			animation-duration: 3s;
+		}
+		.p1 {
+			font-size: 20px;
+		}
+		.btn1 {
+			margin-top: 25px;
+		}
+		.blocks {
+			text-align: center;
+			display: flex;
+			justify-content: space-around;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			font-family: "Century Gothic";
+			background-color: #FF5757;
+			margin-bottom: 200px;
+		}
+		.h1_2 {
+			font-size: 57px;
+			color: white;
+			font-family: "Century Gothic";
+			margin-top: 70px;
+		}
+		.b1 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("gendiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b1:hover {
+			background-image: url("gendivhover.png");
+		}
+		.b2 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("powerdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b2:hover {
+			background-image: url("powerdivhover.png");
+		}
+		.b3 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("lightdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b3:hover {
+			background-image: url("lightdivhover.png");
+		}
+		.b4 {
+			border-radius: 5%;
+			margin-top: 50px;
+			margin-bottom: 15px;
+			width: 250px;
+			height: 300px;
+			background-color: white;
+			background-image: url("zapdiv.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition-property: background;
+			transition-duration: 1.5s;
+		}
+		.b4:hover {
+			background-image: url("zapdivhover.png");
+		}
+		.ap {
+			margin-top: 230px;
+		}
+		.a1 {
+			font-family: "Century Gothic";
+			text-decoration: none;
+			color: black;
+			font-size: 25px;
+		}
+		.a1:hover {
+			color: grey;
+		}
+		.a1:active {
+			color: grey;
+			text-decoration: underline;
+		}
+		.footer {
+			text-align: center;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			background: black;
+			position: relative;
+		}
+		.foot2 {
+			width: 300px;
+			height: 200px;
+			font-family: "Century Gothic";
+			font-size: 10px;
+			color: white;
+		}
+        }
+
+	</style>
+</head>
+<body>
+	<div class="maincontent">
+		<div class="header">
+			<div class="logo"></div>
+			<div class="nav">
+				<a href="" class="nav1">Головна</a>
+				<a href="#catalog" class="nav1">Каталог</a>
+				<a href="" class="nav1">Про нас</a>
+				<a href="" class="nav1">Контакти</a>
+			</div>
+		</div>
+		<div class="body">
+			<div class="pg1">
+				<div class="text1">
+					<h1 class="h1_1">Вітаємо на LIGHT IN!</h1>
+					<p class="p1">Ми продаємо та постачаємо генератори,</p><p class="p1"> прибори для освітлення
+					та запчастини,<p class="p1">допомагаючи тисячам людям мати світло,</p>
+					<p class="p1">коли його немає по всій країні.</p><p class="p1">В нашому каталозі є великій вибір</p><p class="p1"> павербанків, генераторів, фонариків</p><p class="p1">різних розмірів та призначень,</p><p class="p1">сонячних панелей, тощо.</p>
+					<div class="btn1"><a href="#catalog" class="btn1"><img src="lightbtn.png" width="150"></a></div>
+				</div>
+				<div class="pg1img"></div>
+			</div>
+			<div class="pg2">
+				<h1 class="h1_2" id="catalog">Каталог</h1>
+			<div class="blocks">
+				<div class="b1">
+					<p class="ap"><a href="generatorpage.html" class="a1">Генератори</a></p>
+				</div>
+				<div class="b2">
+					<p class="ap"><a href="" class="a1">Павербанки та акумулятори</a></p>
+				</div>
+				<div class="b3">
+					<p class="ap"><a href="" class="a1">Освітлення</a></p>
+				</div>
+				<div class="b4">
+					<p class="ap"><a href="" class="a1">Запчастини</a></p>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="foot2"><img src="LIGHTFOOT.png" width="150"><p class="pf">©LIGHT IN 2023</p></div>
+		</div>
+	</div>
+</body>
+</html>

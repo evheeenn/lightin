@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		@keyframes animation1 {
+		from {
+			transform: translateY(-70px);
+		}
+		to {
+			transform: translateY(0px);
+		}
+		}
+		.maincontent {
+			display: flex;
+			flex-direction: column;
+		}
+		.header {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			background: #FF5757;
+		}
+		.logo {
+			width: 200px;
+			height: 100px;
+			margin-left: 55px;
+			background-image: url("LIGHT.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+		}
+		.nav {
+			display: flex;
+			margin-left: 570px;
+		}
+		.nav1 {
+			font-size: 15px;
+			font-family: "Century Gothic";
+			color: white;
+			text-decoration: none;
+			margin-right: 35px;
+			padding: 10px 15px 10px 15px;
+			border-bottom: 3px solid #8F0000;
+		}
+		.nav1:hover {
+			border-bottom: 3px solid #FF8383;
+		}
+		.nav1:active {
+			color: ;
+			border-bottom: 3px solid white;
+		}
+		.pg1 {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			width: 100%;
+			font-family: "Century Gothic";
+		}
+		.title {
+			font-size: 57px;
+			color: black;
+			font-family: "Century Gothic";
+			margin-top: 50px;
+		}
+		.products {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			width: 100%;
+			font-family: "Century Gothic";
+		}
+		.productcard {
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			width: 300px;
+			height: 350px;
+			font-family: "Century Gothic";
+			transition-property: box-shadow;
+			transition-delay: 0,2s;
+		}
+		.productcard:hover {
+			box-shadow: 0px 0px 3px black;
+		}
+		.productimg {
+			width: 298px;
+			height: 200px;
+		}
+		.productname {
+			margin-top: 5px;
+			font-size: 17px;
+			text-decoration: none;
+			color: black;
+		}
+		.productname:hover {
+			color: grey;
+
+		}
+		.productname:active {
+			text-decoration: underline;
+
+		}
+		.price {
+			color: #FF5757;
+			font-size: 25px;
+			margin-bottom: 30px;
+		}
+		.buy {
+			padding: 10px 20px 10px 20px;
+			font-size: 20px;
+			background-color: #FF5757;
+			color: white;
+			text-decoration: none;
+		}
+		.buy:hover {
+			background-color: #FA7878;
+
+		}
+		.buy:active {
+			text-decoration: underline;
+
+		}
+		
+		.footer {
+			text-align: center;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			background: black;
+			position: relative;
+		}
+		.foot2 {
+			width: 300px;
+			height: 200px;
+			font-family: "Century Gothic";
+			font-size: 20px;
+			color: white;
+		}
+		/* Portrait tablets and medium desktops */
+@media (min-width: 991px) and (max-width: 1199px) {
+	* {
+			margin: 0;
+			padding: 0;
+		}
+		@keyframes animation1 {
+		from {
+			transform: translateY(-70px);
+		}
+		to {
+			transform: translateY(0px);
+		}
+		}
+		.maincontent {
+			display: flex;
+			flex-direction: column;
+		}
+		.header {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			background: #FF5757;
+		}
+		.logo {
+			width: 200px;
+			height: 100px;
+			margin-left: 55px;
+			background-image: url("LIGHT.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+		}
+		.nav {
+			display: flex;
+			margin-left: 300px;
+		}
+		.nav1 {
+			font-size: 15px;
+			font-family: "Century Gothic";
+			color: white;
+			text-decoration: none;
+			margin-right: 35px;
+			padding: 10px 15px 10px 15px;
+			border-bottom: 3px solid #8F0000;
+		}
+		.nav1:hover {
+			border-bottom: 3px solid #FF8383;
+		}
+		.nav1:active {
+			color: ;
+			border-bottom: 3px solid white;
+		}
+		.pg1 {
+			text-align: center;
+			display: flex;
+			width: 100%;
+			font-family: "Century Gothic";
+		}
+		.footer {
+			text-align: center;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			background: black;
+			position: relative;
+		}
+		.foot2 {
+			width: 300px;
+			height: 200px;
+			font-family: "Century Gothic";
+			font-size: 20px;
+			color: white;
+		}
+
+
+}
+
+		@media (min-width: 768px) and (max-width: 991px) {
+	* {
+			margin: 0;
+			padding: 0;
+		}
+		@keyframes animation1 {
+		from {
+			transform: translateY(-70px);
+		}
+		to {
+			transform: translateY(0px);
+		}
+		}
+		.maincontent {
+			display: flex;
+			flex-direction: column;
+		}
+		.header {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background: #FF5757;
+		}
+		.logo {
+			width: 200px;
+			height: 100px;
+			margin-left: 55px;
+			background-image: url("LIGHT.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+		}
+		.nav {
+			display: flex;
+			margin-left: 100px;
+			margin-bottom: 50px;
+		}
+		.nav1 {
+			font-size: 15px;
+			font-family: "Century Gothic";
+			color: white;
+			text-decoration: none;
+			margin-right: 35px;
+			padding: 10px 15px 10px 15px;
+			border-bottom: 3px solid #8F0000;
+		}
+		.nav1:hover {
+			border-bottom: 3px solid #FF8383;
+		}
+		.nav1:active {
+			color: ;
+			border-bottom: 3px solid white;
+		}
+		.pg1 {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			font-family: "Century Gothic";
+		}
+		
+		.footer {
+			text-align: center;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			background: black;
+			position: relative;
+		}
+		.foot2 {
+			width: 300px;
+			height: 200px;
+			font-family: "Century Gothic";
+			font-size: 20px;
+			color: white;
+		}
+}
+		/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	* {
+			margin: 0;
+			padding: 0;
+		}
+		@keyframes animation1 {
+		from {
+			transform: translateY(-70px);
+		}
+		to {
+			transform: translateY(0px);
+		}
+		}
+		.maincontent {
+			display: flex;
+			flex-direction: column;
+		}
+		.header {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background: #FF5757;
+		}
+		.logo {
+			width: 200px;
+			height: 100px;
+			margin-left: 0px;
+			background-image: url("LIGHT.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+		}
+		.nav {
+			display: flex;
+			margin-left: 0px;
+			margin-bottom: 35px;
+		}
+		.nav1 {
+			font-size: 15px;
+			font-family: "Century Gothic";
+			color: white;
+			text-decoration: none;
+			margin-right: 35px;
+			padding: 10px 15px 10px 15px;
+			border-bottom: 3px solid #8F0000;
+		}
+		.nav1:hover {
+			border-bottom: 3px solid #FF8383;
+		}
+		.nav1:active {
+			color: ;
+			border-bottom: 3px solid white;
+		}
+		.pg1 {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			font-family: "Century Gothic";
+		}
+		.title {
+			font-size: 30px;
+		}
+		
+		.footer {
+			text-align: center;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			background: black;
+			position: relative;
+		}
+		.foot2 {
+			width: 300px;
+			height: 200px;
+			font-family: "Century Gothic";
+			font-size: 20px;
+			color: white;
+		}
+
+
+}
+		/* Landscape phones and smaller */
+         @media (max-width: 480px) {
+	    .header {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background: #FF5757;
+		}
+		.logo {
+			width: 200px;
+			height: 100px;
+			margin-left: 20px;
+			background-image: url("LIGHT.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+		}
+		.nav {
+			display: flex;
+			margin-left: 20px;
+			margin-bottom: 20px;
+		}
+		.nav1 {
+			font-size: 10px;
+			font-family: "Century Gothic";
+			color: white;
+			text-decoration: none;
+			margin-right: 35px;
+			padding: 5px 10px 5px 10px;
+			border-bottom: 3px solid #8F0000;
+		}
+		.nav1:hover {
+			border-bottom: 3px solid #FF8383;
+		}
+		.nav1:active {
+			color: ;
+			border-bottom: 3px solid white;
+		}
+	    .pg1 {
+	    	text-align: center;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			font-family: "Century Gothic";
+		}
+		.title {
+			font-size: 30px;
+		}
+		.footer {
+			text-align: center;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			background: black;
+			position: relative;
+		}
+		.foot2 {
+			width: 300px;
+			height: 200px;
+			font-family: "Century Gothic";
+			font-size: 10px;
+			color: white;
+		}
+        }
+	</style>
+</head>
+<body>
+	<div class="maincontent">
+		<div class="header">
+			<div class="logo"></div>
+			<div class="nav">
+				<a href="index.html" class="nav1">Головна</a>
+				<a href="#catalog" class="nav1">Каталог</a>
+				<a href="" class="nav1">Про нас</a>
+				<a href="" class="nav1">Контакти</a>
+			</div>
+		</div>
+		<div class="body">
+			<div class="pg1">
+				<h1 class="title">Генератори</h1>
+				<div class="products">
+				<div class="productcard">
+		<div class="productimg"><a href=""><img src="generators/walter_stahl_pr8500w.jpg" width="230"></a></div>
+		<a href="" class="productname">Генератор бензиновий Walter Stahl 3 кВт, 3 фази</a>
+		<p class="price">15 999 грн</p>
+		<a href="" class="buy">Купити</a>
+	</div>
+	<div class="productcard">
+		<div class="productimg"><a href=""><img src="generators/4051076194_w640_h640_generator-benzinovyj-invertornyj.webp" width="207"></a></div>
+		<a href="" class="productname">Генератор бензиновий інверторний FOGO F 2001 IS 1,8 кВт</a>
+		<p class="price">39 899 грн</p>
+		<a href="" class="buy">Купити</a>
+	</div>
+	<div class="productcard">
+		<div class="productimg"><a href=""><img src="generators/294039748.jpg" width="207"></a></div>
+		<a href="" class="productname">Генератор бензиновий KAMA KGL-3500-C (3,5 КВа, 1 фаза)</a>
+		<p class="price">35 099 грн</p>
+		<a href="" class="buy">Купити</a>
+	</div>
+	<div class="productcard">
+		<div class="productimg"><a href=""><img src="generators/benzinli_portatif_jenerator_fgl3500le.580x580.jpg.webp" width="207"></a></div>
+		<a href="" class="productname">Генератор бензиновый Full FGL 3500LE, 2.8 квт, 1 фаза</a>
+		<p class="price">37 700 грн</p>
+		<a href="" class="buy">Купити</a>
+	</div>
+	<div class="productcard">
+		<div class="productimg"><a href=""><img src="generators/shopping.webp" width="207"></a></div>
+		<a href="" class="productname">Генератор бензиновий FOGO F3001 3 кВт, 1 фаза</a>
+		<p class="price">40 300 грн</p>
+		<a href="" class="buy">Купити</a>
+	</div>
+	<div class="productcard">
+		<div class="productimg"><a href=""><img src="generators/benzinli_portatif_jenerator_fgl5000le.1200x628.jpg" width="207"></a></div>
+		<a href="" class="productname">Генератор бензиновый Full FGL 5000LE 3.8 кВт, 1 фаза</a>
+		<p class="price">51 999 грн</p>
+		<a href="" class="buy">Купити</a>
+	</div>
+	<div class="productcard">
+		<div class="productimg"><a href=""><img src="generators/dizel_kabinli_portatif_jenerator_fdl9000sc.1200x1026.jpg" width="230"></a></div>
+		<a href="" class="productname">Генератор дизельный Full FDL 9000SC 6.3 кВт, 1 фаза</a>
+		<p class="price">123 499 грн</p>
+		<a href="" class="buy">Купити</a>
+	</div>
+	<div class="productcard">
+		<div class="productimg"><a href=""><img src="generators/benzinli_portatif_jenerator_fgl10000le.1200x628.jpg" width="207"></a></div>
+		<a href="" class="productname">Генератор бензиновый Full FGL 10000LE 8 кВт, 1 фаза</a>
+		<p class="price">59 999 грн</p>
+		<a href="" class="buy">Купити</a>
+	</div>
+	<div class="productcard">
+		<div class="productimg"><a href=""><img src="generators/walter_stahl_pr8500w.jpg" width="230"></a></div>
+		<a href="" class="productname">Генератор Walter Stahl 3кВт</a>
+		<p class="price">16 000 грн</p>
+		<a href="" class="buy">Купити</a>
+	</div>
+	<div class="productcard">
+		<div class="productimg"><a href=""><img src="generators/walter_stahl_pr8500w.jpg" width="230"></a></div>
+		<a href="" class="productname">Генератор Walter Stahl 3кВт</a>
+		<p class="price">16 000 грн</p>
+		<a href="" class="buy">Купити</a>
+	</div>
+	<div class="productcard">
+		<div class="productimg"><a href=""><img src="generators/walter_stahl_pr8500w.jpg" width="230"></a></div>
+		<a href="" class="productname">Генератор Walter Stahl 3кВт</a>
+		<p class="price">16 000 грн</p>
+		<a href="" class="buy">Купити</a>
+	</div>
+	<div class="productcard">
+		<div class="productimg"><a href=""><img src="generators/walter_stahl_pr8500w.jpg" width="230"></a></div>
+		<a href="" class="productname">Генератор Walter Stahl 3кВт</a>
+		<p class="price">16 000 грн</p>
+		<a href="" class="buy">Купити</a>
+	</div>
+</div>
+			</div>
+		<div class="footer">
+			<div class="foot2"><img src="LIGHTFOOT.png" width="150"><p class="pf">©LIGHT IN 2023</p></div>
+		</div>
+	</div>
+</body>
+</html>
